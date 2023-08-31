@@ -5,32 +5,32 @@
         "project_name": "scripts",
         "runtime": "python3.10",
         "aws_region": "us-east-1",
-        "s3_bucket": "bucket-parcial-bigdata",
+        "s3_bucket": "parcial-html",
         "role_name": "LabRole",
         "manage_roles": false,
         "apigateway_enabled": false,
         "environment_variables": {
-            "S3_BUCKET": "bucket-parcial-bigdata"
+            "S3_BUCKET": "parcial-html"
         }
     },
     "dev2": {
-        "app_function": "process.lambda_handler",  // Cambia "process.p" a "process.lambda_handler"
+        "app_function": "process.lambda_handler",  
         "profile_name": "default",
         "project_name": "scripts2",
         "runtime": "python3.10",
         "aws_region": "us-east-1",
-        "s3_bucket": "bucket-parcial-bigdata",
+        "s3_bucket": "parcial-html",
         "role_name": "LabRole",
         "manage_roles": false,
         "apigateway_enabled": false,
         "environment_variables": {
-            "S3_BUCKET": "bucket-parcial-bigdata"
+            "S3_BUCKET": "parcial-html"
         },
         "events": [
             {
-                "function": "process.lambda_handler",  // Cambia "process.p" a "process.lambda_handler"
+                "function": "process.lambda_handler",  
                 "event_source": {
-                    "arn": "arn:aws:s3:::bucket-parcial-bigdata",
+                    "arn": "arn:aws:s3:::parcial-html",
                     "events": [
                         "s3:ObjectCreated:*"
                     ]
