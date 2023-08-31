@@ -1,6 +1,6 @@
 {
     "dev": {
-        "app_function": "Extract.download_and_upload_to_s3",
+        "app_function": "Extract.main",
         "profile_name": "default",
         "project_name": "scripts",
         "runtime": "python3.10",
@@ -14,7 +14,7 @@
         }
     },
     "dev2": {
-        "app_function": "process.lambda_handler",  
+        "app_function": "process.main",  
         "profile_name": "default",
         "project_name": "scripts2",
         "runtime": "python3.10",
