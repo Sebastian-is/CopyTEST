@@ -1,7 +1,7 @@
-import json
 import requests
 import datetime
 import boto3
+
 def main():
     url_add = "https://www.eltiempo.com/"
     response = requests.get(url_add)
@@ -12,8 +12,9 @@ def main():
     bucket_name = "parcial-html"
 
     s3 = boto3.client('s3')
-    s3.put_object(Body=html_content , Bucket=bucket_name, Key=pagina)
+    s3.put_object(Body=html_content, Bucket=bucket_name, Key=pagina)
 
     print(f"Archivo '{pagina}' subido a '{bucket_name}'")
 
-main()
+if __name__ == "__main__":
+    main()
