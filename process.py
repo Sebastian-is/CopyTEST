@@ -5,6 +5,7 @@ import csv
 import tempfile
 import os
 
+
 def obtener(bucket, ruta):
     s3 = boto3.client('s3')
 
