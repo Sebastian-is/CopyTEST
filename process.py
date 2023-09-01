@@ -16,6 +16,7 @@ def obtener(bucket, ruta):
         print(f"Error al obtener el archivo: {e}")
         return None
 
+
 def main():
     fecha = datetime.datetime.now().strftime("%Y-%m-%d")
     ruta = 'news/raw/contenido-'
@@ -50,7 +51,6 @@ def main():
 
     fecha_actual = datetime.datetime.now()
     bucket_name = "parcialcsv"
-    dia = fecha_actual.day
     mes = fecha_actual.month
     anio = fecha_actual.year
     s3 = boto3.client('s3')
@@ -58,6 +58,7 @@ def main():
     with open(archivo_csv_temporal, 'rb') as archivo:
         s3.put_object(Body=archivo, Bucket=bucket_name, Key=pagina)
     os.remove(archivo_csv_temporal)
+
 
 if __name__ == "__main__":
     main()
