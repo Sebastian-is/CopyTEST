@@ -1,7 +1,8 @@
 {
     "dev": {
         "app_function": "Extract.main",
-        "profile_name": "default",
+        "aws_access_key_id": "AWS_ACCESS_KEY_ID",
+        "aws_secret_access_key": "AWS_SECRET_ACCESS_KEY",
         "project_name": "scripts",
         "runtime": "python3.10",
         "aws_region": "us-east-1",
@@ -15,16 +16,17 @@
     },
     "dev2": {
         "app_function": "process.main",  
-        "profile_name": "default",
+        "aws_access_key_id": "AWS_ACCESS_KEY_ID",
+        "aws_secret_access_key": "AWS_SECRET_ACCESS_KEY",
         "project_name": "scripts2",
         "runtime": "python3.10",
         "aws_region": "us-east-1",
-        "s3_bucket": "parcial-html",
+        "s3_bucket": "parcial-csv",
         "role_name": "LabRole",
         "manage_roles": false,
         "apigateway_enabled": false,
         "environment_variables": {
-            "S3_BUCKET": "parcial-html"
+            "S3_BUCKET": "parcial-csv"
         },
         "events": [
             {
