@@ -11,7 +11,7 @@ def main():
     fecha = datetime.datetime.now().strftime("%Y-%m-%d")
     pagina =  f'news/raw/contenido-{fecha}.html'
 
-    bucket_name = "parcialbg"
+    bucket_name = "parcial-html"
 
     s3 = boto3.client('s3')
     s3.put_object(Body=html_content , Bucket=bucket_name, Key=pagina)
