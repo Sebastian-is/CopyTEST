@@ -15,7 +15,7 @@
         }
     },
     "dev2": {
-        "app_function": "process.main",  
+        "app_function": "process.main",
         "aws_access_key_id": "AWS_ACCESS_KEY_ID",
         "aws_secret_access_key": "AWS_SECRET_ACCESS_KEY",
         "project_name": "scripts2",
@@ -30,7 +30,7 @@
         },
         "events": [
             {
-                "function": "process.main",  
+                "function": "process.lambda_handler",
                 "event_source": {
                     "arn": "arn:aws:s3:::parcial-html",
                     "events": [
