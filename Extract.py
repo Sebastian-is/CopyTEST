@@ -18,5 +18,5 @@ def main():
     print(f"Archivo '{pagina}' subido a '{bucket_name}'")
 
 
-if name == "main":
+if __name__ == "__main__":
     main()
