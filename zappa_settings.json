@@ -30,7 +30,7 @@
         },
         "events": [
             {
-                "function": "process.lambda_handler",  
+                "function": "process.main",  
                 "event_source": {
                     "arn": "arn:aws:s3:::parcial-html",
                     "events": [
