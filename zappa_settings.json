@@ -1,6 +1,6 @@
 {
     "dev": {
-        "app_function": "Extract.procesar_pagina_web",
+        "app_function": "Extract.main",
         "aws_access_key_id": "AWS_ACCESS_KEY_ID",
         "aws_secret_access_key": "AWS_SECRET_ACCESS_KEY",
         "project_name": "scripts",
