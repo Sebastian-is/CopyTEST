@@ -21,7 +21,7 @@
         "project_name": "scripts2",
         "runtime": "python3.10",
         "aws_region": "us-east-1",
-        "s3_bucket": "parcial-csv",
+        "s3_bucket": "parcial-html",
         "role_name": "LabRole",
         "manage_roles": false,
         "apigateway_enabled": false,
