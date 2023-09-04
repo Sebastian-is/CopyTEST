@@ -23,7 +23,7 @@ def main():
     ruta = 'news/raw/contenido-'
     nombre_archivo = f'{fecha}.html'
     ruta_archivo = f'{ruta}{nombre_archivo}'
-    x = obtener('parcialbg', ruta_archivo)
+    x = obtener('parcial-html', ruta_archivo)
 
     generol = []
     titulol = []
