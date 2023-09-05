@@ -12,16 +12,6 @@
         "apigateway_enabled": false,
         "environment_variables": {
             "S3_BUCKET": "parcial-html"
-        },
-        "iam_role_policy": {
-            "Version": "2012-10-17",
-            "Statement": [
-                {
-                    "Effect": "Allow",
-                    "Action": "s3:PutObject",
-                    "Resource": "arn:aws:s3:::parcial-html/*"
-                }
-            ]
         }
     },
     "dev2": {
@@ -38,19 +28,9 @@
         "environment_variables": {
             "S3_BUCKET": "parcial-csv"
         },
-        "iam_role_policy": {
-            "Version": "2012-10-17",
-            "Statement": [
-                {
-                    "Effect": "Allow",
-                    "Action": "s3:PutObject",
-                    "Resource": "arn:aws:s3:::parcial-csv/*"
-                }
-            ]
-        },
         "events": [
             {
-                "function": "process.main",
+                "function": "process.lambda_handler",
                 "event_source": {
                     "arn": "arn:aws:s3:::parcial-html",
                     "events": [
