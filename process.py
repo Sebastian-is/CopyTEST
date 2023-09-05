@@ -22,7 +22,7 @@ def main():
     ruta = 'news/raw/contenido-'
     nombre_archivo = f'{fecha}.html' 
     ruta_archivo = f'{ruta}{nombre_archivo}'
-    x = obtener('parcialbg' , ruta_archivo)
+    x = obtener('parcial-html' , ruta_archivo)
 
     generol = []
     titulol = []
@@ -50,7 +50,7 @@ def main():
     print(f'Se ha creado el archivo CSV: {archivo_csv}')
 
     fecha_actual = datetime.datetime.now()
-    bucket_name = "parcialcsv"
+    bucket_name = "parcial-csv"
     dia = fecha_actual.day
     mes = fecha_actual.month
     anio = fecha_actual.year
