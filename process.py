@@ -21,7 +21,7 @@ def obtener(bucket, ruta):
 def main():
     fecha = datetime.datetime.now().strftime("%Y-%m-%d")
     ruta = 'news/raw/contenido-'
-    nombre_archivo = f'{fecha}.html' 
+    nombre_archivo = f'{fecha}.html'
     ruta_archivo = f'{ruta}{nombre_archivo}'
     x = obtener('parcial-html', ruta_archivo)
 
