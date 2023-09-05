@@ -13,7 +13,7 @@ def main():
     bucket_name = "parcial-html"
 
     s3 = boto3.client('s3')
-    s3.put_object(Body=html_content ,Bucket=bucket_name, Key=pagina)
+    s3.put_object(Body=html_content, Bucket=bucket_name, Key=pagina)
 
     print(f"Archivo '{pagina}' subido a '{bucket_name}'")
 
